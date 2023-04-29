@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a word</title>
+</head>
+<body>
+<form th:action="@{/account/saveWord}"  th:object="${word}"  method="post" enctype="utf8">
+
+    Term <input type="text" name="term" th:field = "*{term}" placeholder="Enter term of Word"/>
+    <br><br>
+    Definition <input type="text" name="definition" th:field = "*{definition}" placeholder="Enter definition of Word"/>
+  <br><br>
+  <input type="submit" value="OK">
+</form>
+
+
+</body>
+</html>

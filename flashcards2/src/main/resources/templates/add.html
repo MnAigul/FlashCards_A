@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+
+<form th:action="@{/account/saveFolder}"  th:object="${folder}"  method="post" enctype="utf8">
+    <input id="id" name="id" type="hidden" th:field="*{id}"/>
+    Name <input type="text" name="folder_name" th:field = "*{folder_name}" placeholder="Enter name of Folder"/>
+    <br><br>
+    <input type="submit" value="OK">
+</form>
+
+
+
+
+</body>
+</html>
